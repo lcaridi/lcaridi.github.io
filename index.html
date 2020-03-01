@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/56ad3d9948.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <title>gifOS - Inicio</title>    
+</head>
+<body class="">
+    <section class="welcome">
+        <div>
+            <p>¡Bienvenidos/as a Guifos!!! ------- Donde los gifs están ////// Número de visitas: 12.765.803</p>
+        </div>
+    </section>
+    <div class="container">
+        <header class="header">
+            <nav class="header--navbar">
+                <img id="navbarLogo" class="navbarLogo" src="img/gifOF_logo.png"
+                    alt="gifs logo" />
+                <ul class="header--navbar--menu">
+                    <li><button id="uploadButton" class="button--primary">Crear Guifos</button></li>
+                    <li>
+                        <div id="chooseThemeDiv" class="chooseThemeDiv">
+                            <button id="chooseThemeButtonA" class="button--primary">Elegir
+                                Tema</button>
+                            <button id="chooseThemeButtonB" class="button--primary"><i class="fas fa-caret-down"></i></button>
+                        </div>
+                        <div id="themesDiv" class="themesDiv">
+                            <button id="lightThemeButton" class="button--themes button--lighttheme">Sailor Day</button>
+                            <button id="darkThemeButton" class="button--themes button--darktheme">Sailor Night</button>
+                        </div>
+                    </li>
+                    <li> <button id="myGifsButton" class="button--transparentsmall "><u>M</u>is Guifos</button></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="search" class="search">
+            <div class="search--main">
+                <h2 class="search--main--title">Buscar</h2>
+                <div class="search--main--content">
+                    <input id="searchInput" name="searchInput"
+                        placeholder="Busca gifs, hashtags, temas, busca lo que quieras.." maxlength="50" required>
+                    <button id="searchButton" class="button--transparent" disabled> <img src= "./img/lupa.svg"
+                            alt="search magnifier" id="buttonIcon" /> Buscar</button>
+                </div>
+            </div>
+            <ul id="searchSuggested" class="searchSuggested">
+                <li>
+                    <button class="suggestedButtons searchButtons">Funny</button>
+                </li>
+                <li>
+                    <button class="suggesdButtons searchButtons">Nature</button>
+                </li>
+                <li>
+                    <button class="suggesdButtons searchButtons">Science</button>
+                </li>
+            </ul>
+            <div id="searchlastSearchs" class="searchlastSearchs">
+                <button class="searchButtons button--blue" id="searchresult2"> </button>
+                <button class="searchButtons button--blue" id="searchresult1"> </button>
+                <button class="searchButtons button--blue" id="searchresult0"> </button>
+            </div>
+        </section>
+        <section id="suggested">
+            <p class="sectiontitle">Hoy te sugerimos...</p>
+            <div id="suggestedgifsgrid" class="gifsgrid">
+                <div class="gifcontainer suggestedgifcontainer">
+                    <header class="giftext">
+                        <p>#SuperHeros</p>
+                        <img src= "./img/button3.svg">
+                    </header>
+                    <img id="firstDiv" class="gif">
+                    <button class="button--blue buttonSeeMore" name="superheroes">Ver más...</button>
+                </div>
+                <div class="gifcontainer suggestedgifcontainer">
+                    <header class="giftext">
+                        <p>#Pets</p>
+                        <img src= "./img/button3.svg">
+                    </header>
+                    <img id="secondDiv" class="gif">
+                    <button class="button--blue buttonSeeMore" name="pets">Ver más...</button>
+                </div>
+                <div class="gifcontainer suggestedgifcontainer">
+                    <header class="giftext">
+                        <p>#Fantasy</p>
+                        <img src= "./img/button3.svg">
+                    </header>
+                    <img id="thirdDiv" class="gif">
+                    <button class="button--blue buttonSeeMore" name="fantasy">Ver más...</button>
+                </div>
+                <div class="gifcontainer suggestedgifcontainer">
+                    <header class="giftext">
+                        <p>#Anime</p>
+                        <img src= "./img/button3.svg">
+                    </header>
+                    <img id="fourthDiv" class="gif">
+                    <button class="button--blue buttonSeeMore" name="shonen">Ver más...</button>
+                </div>
+            </div>
+        </section>
+        <section id="gifsResults">
+            <p class="sectiontitle" id="gifsResultsText">Tendencias</p>           
+            <div id="gifsResultsGrid" class="gifsgrid" />
+        </section>
+    </div>
+    <!-- <script src="js/classes.js"></script> -->
+    <script src="js/functions.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+$lightcolor-primary: #2f333c;
+
+$pink: #f7c9f3;
+$pinkbg: #fff4fd;
+$activepink: #e6bbe2;
+
+$color-windows: #e6e6e6;
+$color-windows-lighter: #f0f0f0;
+$color-windows-lighter-hover: #dbdbdb;
+
+$gradient-blue: #4d85f5;
+$gradient-pink: #f6c8f3;
+
+%gradient {
+  background: $gradient-pink;
+  background: -webkit-linear-gradient(to right, $gradient-blue, $gradient-pink);
+  background: linear-gradient(to right, $gradient-blue, $gradient-pink);
+}
+
+.light {
+  background-color: $pinkbg;
+  color: $lightcolor-primary;
+
+  .welcome {
+    @extend %gradient;
+  }
+
+  .themesDiv {
+    background-color: $color-windows;
+  }
+
+  .gifcontainer {
+    .giftext {
+      @extend %gradient;
+    }
+  }
+
+  .search {
+    h2 {
+      @extend %gradient;
+    }
+
+    &--main {
+      background: $color-windows;
+    }
+
+    &--suggested {
+      background: $color-windows;
+
+      button {
+        background: $color-windows-lighter;
+      }
+    }
+  }
+
+  .howtorecord,
+  .record,
+  .divUploading,
+  .divuploadDone {
+    background-color: $color-windows;
+
+    header {
+      @extend %gradient;
+    }
+  }
+}

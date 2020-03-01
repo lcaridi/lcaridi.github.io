@@ -1,0 +1,86 @@
+$darkcolor-primary: #fff;
+$darkcolor-windows: #b4b4b4;
+
+$darkpink: #ee3efe;
+$darkactivepink: #ce36db;
+
+$darkcolor-activebutton: #cccccc;
+$darkpinkbg: #110038;
+
+$color-windows-darker: #818181;
+$color-windows-darkerborder: #b4b4b4;
+
+$darkblue: #2e32fb;
+$darkgradient-blue: #2f32fb;
+$darkgradient-pink: #eb3efe;
+
+%darkgradient {
+  background: $darkgradient-pink;
+  background: -webkit-linear-gradient(to right,
+      $darkgradient-blue,
+      $darkgradient-pink);
+  background: linear-gradient(to right, $darkgradient-blue, $darkgradient-pink);
+}
+
+.dark {
+  background-color: $darkpinkbg;
+  color: $darkcolor-primary;
+
+  .welcome {
+    @extend %darkgradient;
+  }
+
+  .themesDiv {
+    background-color: $darkcolor-windows;
+  }
+
+  i {
+    color: $color-white;
+  }
+
+  .gifcontainer {
+    .giftext {
+      @extend %darkgradient;
+    }
+  }
+
+  .search {
+    h2 {
+      @extend %darkgradient;
+    }
+
+    &--main {
+      background: $darkcolor-windows;
+    }
+
+    &--suggested {
+      background: $darkcolor-windows;
+
+      button {
+        background: $color-windows-lighter-hover;
+      }
+    }
+
+  }
+
+  .howtorecord,
+  .record,
+  .divUploading,
+  .divuploadDone {
+    background-color: $darkcolor-windows;
+    color: $lightcolor-primary;
+
+    i,
+    b {
+      color: $lightcolor-primary;
+    }
+
+    button i {
+      color: $color-white;
+    }
+
+    header {
+      @extend %darkgradient;
+    }
+  }
+}

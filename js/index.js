@@ -12,7 +12,6 @@ const fourthDiv = document.getElementById('fourthDiv');
 
 getTendenciesGifs(gifsResultsGrid);
 
-searchButton.addEventListener('click', searchEventListener);
 const searchEventListener = () => {
   searchGifs(searchInput.value, gifsResultsGrid);
   gifsResultsText.innerText = searchInput.value;
@@ -24,6 +23,7 @@ const searchEventListener = () => {
   lastSearchs.style.display = 'flex';
 };
 
+searchButton.addEventListener('click', searchEventListener);
 
 searchInput.addEventListener('keyup', (e) => {
   if (searchInput.value.trim() !== '' && e.keyCode === 13) {

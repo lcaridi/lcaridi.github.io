@@ -3,8 +3,8 @@ const logo = document.getElementById('navbarLogo');
 const bodyClass = sessionStorage.getItem('bodyClass');
 const uploadButton = document.getElementById('uploadButton');
 const myGifsButton = document.getElementById('myGifsButton');
-const searchSection = document.getElementById('search');
-const suggestedSection = document.getElementById('suggested');
+const searchdiv = document.getElementById('search');
+const suggesteddiv = document.getElementById('suggested');
 const gifsResultsText = document.getElementById('gifsResultsText');
 const gifsResultsGrid = document.getElementById('gifsResultsGrid');
 const chooseThemeDiv = document.getElementById('chooseThemeDiv');
@@ -40,8 +40,8 @@ uploadButton.addEventListener('click', () => {
 });
 
 myGifsButton.addEventListener('click', () => {
-  searchSection.style.display = 'none';
-  suggestedSection.style.display = 'none';
+  searchdiv.style.display = 'none';
+  suggesteddiv.style.display = 'none';
   gifsResultsText.innerHTML = 'Mis Guifos';
   getMyGifs(gifsResultsGrid);
 });

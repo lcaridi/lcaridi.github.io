@@ -1,6 +1,6 @@
 const arrow = document.getElementById('navbarArrow');
 const howToRecordCancel = document.getElementById('howToRecordCancel');
-const myGifsSection = document.getElementById('gifsResults');
+const myGifsdiv = document.getElementById('gifsResults');
 const continueButton = document.getElementById('howToRecordContinue');
 const howToRecordDiv = document.getElementById('howToRecordDiv');
 const recordDiv = document.getElementById('recordDiv');
@@ -39,7 +39,7 @@ howToRecordCancel.addEventListener('click', () => {
 });
 
 continueButton.addEventListener('click', () => {
-  myGifsSection.style.display = 'none';
+  myGifsdiv.style.display = 'none';
   howToRecordDiv.style.display = 'none';
   recordDiv.style.display = 'block';
   getStream(video);

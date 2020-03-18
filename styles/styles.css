@@ -313,7 +313,7 @@ input {
   margin-bottom: 50px;
 }
 
-.sectiontitle {
+.divtitle {
   text-align: left;
   padding-left: 5px;
   width: 99%;
@@ -605,7 +605,7 @@ input {
   color: #fff;
 }
 
-#uploadsection header {
+#uploaddiv header {
   display: flex;
   justify-content: space-between;
   padding-right: 10px;

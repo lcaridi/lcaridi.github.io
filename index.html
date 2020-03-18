@@ -15,11 +15,11 @@
     <title>gifOS - Inicio</title>    
 </head>
 <body class="">
-    <section class="welcome">
+    <div class="welcome">
         <div>
             <p>¡Bienvenidos/as a Guifos!!! ------- Donde los gifs están ////// Número de visitas: 12.765.803</p>
         </div>
-    </section>
+    </div>
     <div class="container">
         <header class="header">
             <nav class="header--navbar">
@@ -42,7 +42,7 @@
                 </ul>
             </nav>
         </header>
-        <section id="search" class="search">
+        <div id="search" class="search">
             <div class="search--main">
                 <h2 class="search--main--title">Buscar</h2>
                 <div class="search--main--content">
@@ -68,48 +68,48 @@
                 <button class="searchButtons button--blue" id="searchresult1"> </button>
                 <button class="searchButtons button--blue" id="searchresult0"> </button>
             </div>
-        </section>
-        <section id="suggested">
-            <p class="sectiontitle">Hoy te sugerimos...</p>
+        </div>
+        <div id="suggested">
+            <p class="divtitle">Hoy te sugerimos...</p>
             <div id="suggestedgifsgrid" class="gifsgrid">
                 <div class="gifcontainer suggestedgifcontainer">
                     <header class="giftext">
                         <p>#Thanos</p>
-                        <img src= "./img/button3.svg">
+                        <img src= "./img/button3.svg" alt="Botón">
                     </header>
-                    <img id="firstDiv" class="gif">
+                    <img src="data:," id="firstDiv" class="gif" alt="Primera imágen">
                     <button class="button--blue buttonSeeMore" name="thanos">Ver más...</button>
                 </div>
                 <div class="gifcontainer suggestedgifcontainer">
                     <header class="giftext">
                         <p>#Ubuntu</p>
-                        <img src= "./img/button3.svg">
+                        <img src= "./img/button3.svg" alt="Botón">
                     </header>
-                    <img id="secondDiv" class="gif">
+                    <img src="data:," id="secondDiv" class="gif" alt="Segunda imágen">
                     <button class="button--blue buttonSeeMore" name="ubuntu">Ver más...</button>
                 </div>
                 <div class="gifcontainer suggestedgifcontainer">
                     <header class="giftext">
                         <p>#BabyYoda</p>
-                        <img src= "./img/button3.svg">
+                        <img src= "./img/button3.svg" alt="Botón">
                     </header>
-                    <img id="thirdDiv" class="gif">
+                    <img src="data:," id="thirdDiv" class="gif" alt="Tercera imágen">
                     <button class="button--blue buttonSeeMore" name="babyyoda">Ver más...</button>
                 </div>
                 <div class="gifcontainer suggestedgifcontainer">
                     <header class="giftext">
                         <p>#SailorMoon</p>
-                        <img src= "./img/button3.svg">
+                        <img src= "./img/button3.svg" alt="Botón">
                     </header>
-                    <img id="fourthDiv" class="gif">
+                    <img src="data:," id="fourthDiv" class="gif" alt="Cuarta imágen">
                     <button class="button--blue buttonSeeMore" name="sailormoon">Ver más...</button>
                 </div>
             </div>
-        </section>
-        <section id="gifsResults">
-            <p class="sectiontitle" id="gifsResultsText">Tendencias</p>           
-            <div id="gifsResultsGrid" class="gifsgrid" />
-        </section>
+        </div>
+        <div id="gifsResults">
+            <p class="divtitle" id="gifsResultsText">Tendencias</p>           
+            <div id="gifsResultsGrid" class="gifsgrid"></div>
+        </div>
     </div>
     <script src="js/functions.js"></script>
     <script src="js/common.js"></script>

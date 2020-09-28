@@ -1,4 +1,4 @@
-const apiKey = '5rZJozg0RFEJrNED6LxrWZAe3FNjQj9s';
+const apiKey = 'gT5LIA35wXhdFJJYt8EucJM3U5yTzPDw';
 let arrayMyGIfs = [];
 let arrayString = [];
 let recorder = null;
@@ -49,7 +49,7 @@ const getHashtags = (gif, search) => {
 };
 
 const searchGifs = (searchValue, container) => {
-  fetch(`https://api.giphy.com/v1/gifs/search?q=${searchValue}&apiKey=${apiKey}&limit=20`)
+  fetch(`https://api.giphy.com/v1/gifs/search?q=${searchValue}&api_key=${apiKey}&limit=20`)
     .then((res) => {
       return res.json();
     }).then((res) => {
@@ -61,7 +61,7 @@ const searchGifs = (searchValue, container) => {
 };
 
 const searchCategoryGifs = (searchValue, img) => {
-  fetch(`https://api.giphy.com/v1/gifs/search?q=${searchValue}&apiKey=${apiKey}&limit=1`)
+  fetch(`https://api.giphy.com/v1/gifs/search?q=${searchValue}&api_key=${apiKey}&limit=1`)
     .then((res) => {
       return res.json();
     }).then((res) => {
@@ -74,7 +74,7 @@ const searchCategoryGifs = (searchValue, img) => {
 };
 
 const getTendenciesGifs = (container) => {
-  fetch(`https://api.giphy.com/v1/gifs/trending?&limit=20&apiKey=${apiKey}`)
+  fetch(`https://api.giphy.com/v1/gifs/trending?&limit=20&api_key=${apiKey}`)
     .then((res) => {
       return res.json();
     }).then((res) => {
@@ -151,7 +151,7 @@ const saveMyGifs = (gifID) => {
 const getMyGifs = (container) => {
   const gifs = localStorage.getItem('arrayMyGifs');
   if (gifs) {
-    fetch(`https://api.giphy.com/v1/gifs?apiKey=${apiKey}&ids=${gifs}`)
+    fetch(`https://api.giphy.com/v1/gifs?api_key=${apiKey}&ids=${gifs}`)
       .then((res) => {
         return res.json();
       })
